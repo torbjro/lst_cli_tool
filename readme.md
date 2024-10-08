@@ -17,13 +17,13 @@ Run these commands in the directory you want to clone the repo:
     source ~/.bashrc
 
 The script `setup.sh` is used to make the `lst` command usable.
-The script will compile the code, create an alias in the 
-`~/.basrc` file and source it. Note that if you use another
+The script will compile the code and create an alias in the 
+`~/.basrc` file. Note that if you use another
 shell, the `~/.bashrc` needs to be changed to the equivalent 
 for your shell. For instance, if using zsh it should be changed to 
 `~/.zshrc`.
 
-Now, the command should be callable with this syntax:
+After sourcing `~/.bashrc`, the command should be callable with this syntax:
 
 `lst [directory_path]`
 
