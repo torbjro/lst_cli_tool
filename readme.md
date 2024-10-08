@@ -7,6 +7,8 @@ current directory will be used. It should print something like this:
 
 ![Example from this repository](./docs/example.png "Example from this repository")
 
+Note that there us a recurstion depth, and if it is reached, the directory will have `(.)` at the end of the direcotry name. In addition, a maximum of 10 files/directories will be displayed from each directory. If this limit is reached, it will display `...`. These parameters can be changed in the code.
+
 ## Installation and setup
 
 Run these commands in the directory you want to clone the repo:
@@ -29,6 +31,12 @@ After sourcing `~/.bashrc`, the command should be callable with this syntax:
 
 Directory path is optional, and if the directory path is not specified, 
 the current directory will be used.
+
+### Possible errors
+
+The CMake version required might be different from your installed CMake version. You can try to either downgrade the CMake version required in `CMakeLists.txt` or upgrade your CMake version. 
+
+Make sure that the shell specific commands suits your used shell, as mentioned previously. 
 
 ## Disclaimer
 
