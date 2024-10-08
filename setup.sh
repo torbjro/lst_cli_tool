@@ -1,10 +1,15 @@
 #!/usr/bin/env sh
-echo 'Running script'
+echo 'Running script.'
 
-BASEDIR=$(dirname "$0")
+BASEDIR=$(realpath "$(dirname "$0")")
 
-cmake --build "${BASEDIR}"/cmake-build-debug
-echo "alias lst='${BASEDIR}/cmake-build-debug/cli '" >> ~/.bashrc # change .-file if you are using different shell
-source ~/.bashrc
+# compile code
+cmake -B "${BASEDIR}"/build_files
+cmake --build "${BASEDIR}"/build_files
+echo 'Compiled code to /build_files.'
 
-echo 'To use lst command, just type in lst in the command line and use it as with ls'
+# create alias
+echo "alias lst='${BASEDIR}/build_files/cli '" >> ~/.bashrc # change . file if you are using different shell
+echo 'Please run "source ~/.bashrc" to apply changes.'
+
+echo 'To use lst command, just type in lst in the command line and use it as with ls.'

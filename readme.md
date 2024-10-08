@@ -14,6 +14,7 @@ Run these commands in the directory you want to clone the repo:
     git clone https://github.com/torbjro/lst_cli_tool.git
     cd lst_cli_tool
     bash setup.sh
+    source ~/.bashrc
 
 The script `setup.sh` is used to make the `lst` command usable.
 The script will compile the code, create an alias in the 
