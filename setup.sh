@@ -9,7 +9,7 @@ cmake --build "${BASEDIR}"/build_files
 echo 'Compiled code to /build_files.'
 
 # create alias
-echo "alias lst='${BASEDIR}/build_files/cli '" >> ~/.bashrc # change . file if you are using different shell
-echo 'Please run "source ~/.bashrc" to apply changes.'
-
+echo "alias lst='${BASEDIR}/build_files/cli '" >> ~/.zshrc # change .-file if you are using different shell
+echo 'Run "source ~/.zshrc" to apply changes.'
+echo ''
 echo 'To use lst command, just type in lst in the command line and use it as with ls.'
